@@ -1,0 +1,18 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 12.4V23.6" stroke="#658EFF" stroke-width="3" stroke-linecap="round" />
+  <path d="M13.4 9.6C19.6 10.2 26 10.6 26 14.4" stroke="url(#session-git-fork)" stroke-width="3" stroke-linecap="round" />
+  <path d="M26 21.6C26 25.4 19.6 25.8 13.4 26.4" stroke="url(#session-git-merge)" stroke-width="3" stroke-linecap="round" />
+  <circle cx="10" cy="8.6" r="3.6" stroke="#658EFF" stroke-width="3" />
+  <circle cx="10" cy="27.4" r="3.6" stroke="#658EFF" stroke-width="3" />
+  <circle cx="26" cy="18" r="3.6" stroke="#41E1AC" stroke-width="3" />
+  <defs>
+    <linearGradient id="session-git-fork" x1="13.4" y1="9.6" x2="26" y2="14.4" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#658EFF" />
+      <stop offset="1" stop-color="#41E1AC" />
+    </linearGradient>
+    <linearGradient id="session-git-merge" x1="26" y1="21.6" x2="13.4" y2="26.4" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#41E1AC" />
+      <stop offset="1" stop-color="#658EFF" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,16 @@
+# 会话 Git 的 Loader 补丁：往 profile 里插一行 Host 插件。
+# 想改配置时，在 profile 的 cordis.patch.yml 里按 id 覆盖整段 config。
+- insert:
+    - id: session-git
+      name: 'dsh-session-git'
+      config:
+        # 在运行时上下文里告诉模型这段对话有哪些分支（只放很少变化的信息）。
+        runtimeContext: true
+        # 给模型 session_branches / session_branch_merge 两个工具。
+        tools: true
+        # 合并摘要的字符上限，超出时自动压缩细节。
+        maxDigestChars: 24000
+        # 运行时上下文里最多列出几个分支。
+        maxContextBranches: 8
+        # 命令结果和摘要的语言：auto（按会话内容判断）、zh 或 en。
+        locale: auto

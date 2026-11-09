@@ -1,0 +1,8 @@
+# 从 GitHub 安装时（codeload 压缩包）只带插件运行需要的文件，和 npm 包保持一致
+/.github export-ignore
+/assets export-ignore
+/scripts export-ignore
+/test export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/screenshots.json export-ignore

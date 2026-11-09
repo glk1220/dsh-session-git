@@ -1,0 +1,71 @@
+{
+  "name": "dsh-session-git",
+  "version": "0.1.0",
+  "description": "Session Git for DeepSeek Harness: see how your forked sessions branch off, and merge a branch's work back into the main session without re-typing anything.",
+  "icon": "./icon.svg",
+  "type": "module",
+  "license": "MIT",
+  "author": "glk1220",
+  "homepage": "https://github.com/glk1220/dsh-session-git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glk1220/dsh-session-git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glk1220/dsh-session-git/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "fork",
+    "branch",
+    "merge"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "check": "node scripts/check.js"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-commands"
+      ]
+    }
+  }
+}

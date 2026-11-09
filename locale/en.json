@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Git",
+    "description": "See the sessions you forked off and merge a branch's work back into the main session without re-typing it."
+  }
+}
